@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Base Apparel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <img src="./assets/logo.svg" alt="Base Apparel logo" class="logo" />
+        <img src="./assets/hero-mobile.jpg" alt="" class="mobile-only" />
+        <div class="content">
+          <h1><span class="colored-heading">We're </span>coming soon</h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form id="form-email" novalidate>
+            <input
+              type="email"
+              placeholder="Email Address"
+              aria-label="Email address"
+              name="email"
+              type="email"
+              required
+            />
+            <button type="submit">
+              <img src="./assets/icon-arrow.svg" alt="" />
+            </button>
+            <div class="error-icon hidden">
+              <img
+                src="./assets/icon-error.svg"
+                alt="error icon for invalid email address"
+              />
+            </div>
+            
+          </form>
+
+          <div class="error-text hidden">
+            <p>Please provide a valid email</p>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-only"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
