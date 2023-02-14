@@ -13,11 +13,8 @@ form.addEventListener("submit", (e) => {
     errorMessage.classList.add("hidden");
     errorIcon.classList.add("hidden");
     email.classList.remove("error-border");
-
-    console.log("test");
-    console.log(emailValue);
     form.reset();
-  } else {
+   } else {
     errorMessage.classList.remove("hidden");
     errorIcon.classList.remove("hidden");
     email.classList.add("error-border");
